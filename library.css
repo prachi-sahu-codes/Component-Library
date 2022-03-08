@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+  color: rgb(43, 43, 43);
+  line-height: 1.4;
+  height: 100vh;
+}
+
+
+/* 
+***************************************************************************
+Reusable classes
+*************************************************************************** */
+
+.grid {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  grid-template-rows: 80px 1fr;
+}
+
+.heading-secondary-1{
+    background-color: #1b4332;
+    color: #fff;
+    font-size: 2.4rem;
+  font-weight: 300;
+    grid-column: 1/-1;
+  padding: 1.8rem;
+  padding-left: 4.2rem;
+  padding-top: 0;
+
+}
+.heading-tertiary{
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #202020;
+    padding: 1.8rem;
+ padding-left: 4.2rem;
+}
+
+.section-scroll{
+   
+    font-size: 1.4rem;
+    grid-column: -3/-2;
+    overflow-y: scroll;
+    border-right: 1px solid rgba(0,0,0,.12);
+    
+}
+
+.main-content{
+
+grid-column: -2/-1;
+
+}
+
+.main-content-box{
+   padding-left: 4.2rem;
+    padding: 1.8rem;
+    padding-top: 0;
+}
+
+.main-content-btn{
+    display: inline-block;
+    margin: 1.8rem;
+    margin-top: 0;
+
+}
+
+.scroll-list{
+ list-style: none;
+ font-weight: 400;
+ padding: 1.8rem;
+ padding-top: 2.8rem;
+ padding-left: 4.2rem;
+}
+.content-color-1{
+
+}
+
+.content-color-2{
+background-color: #adadad;
+}
+
+/* 
+***************************************************************************
+Alone classes
+*************************************************************************** */
+
+.button-option-1{
+    background-color: red;
+    color: #202020;
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 0.8rem 1.6rem;
+    border-radius: 5px;
+}
