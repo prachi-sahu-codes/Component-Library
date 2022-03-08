@@ -33,8 +33,8 @@ Reusable classes
   padding: 1.8rem;
   padding-left: 4.2rem;
   padding-top: 0;
-
 }
+
 .heading-tertiary{
     font-size: 2.4rem;
     font-weight: 500;
@@ -44,7 +44,7 @@ Reusable classes
 }
 
 .section-scroll{
-   
+    height: calc(100vh - 11rem);
     font-size: 1.4rem;
     grid-column: -3/-2;
     overflow-y: scroll;
@@ -53,9 +53,10 @@ Reusable classes
 }
 
 .main-content{
-
-grid-column: -2/-1;
-
+    height: calc(100vh - 11rem);
+    grid-column: -2/-1;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .main-content-box{
