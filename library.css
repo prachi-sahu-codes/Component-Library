@@ -12,7 +12,6 @@ body {
   height: 100vh;
 }
 
-
 /* 
 ***************************************************************************
 Reusable classes
@@ -20,71 +19,94 @@ Reusable classes
 
 .grid {
   display: grid;
-  grid-template-columns: 350px 1fr;
+  grid-template-columns: 370px 1fr;
   grid-template-rows: 80px 1fr;
 }
 
-.heading-secondary-1{
-    background-color: #1b4332;
-    color: #fff;
-    font-size: 2.4rem;
+.heading-secondary-1 {
+  background-color: #1b4332;
+  color: #fff;
+  font-size: 2.4rem;
   font-weight: 300;
-    grid-column: 1/-1;
+  grid-column: 1/-1;
   padding: 1.8rem;
   padding-left: 4.2rem;
   padding-top: 0;
 }
 
-.heading-tertiary{
-    font-size: 2.4rem;
-    font-weight: 500;
-    color: #202020;
-    padding: 1.8rem;
- padding-left: 4.2rem;
+.heading-tertiary {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #202020;
+  padding: 1.8rem;
+  padding-left: 4.2rem;
 }
 
-.section-scroll{
-    height: calc(100vh - 11rem);
-    font-size: 1.4rem;
-    grid-column: -3/-2;
-    overflow-y: scroll;
-    border-right: 1px solid rgba(0,0,0,.12);
-    
+/* 
+***************************************************************************
+scroll
+*************************************************************************** */
+
+.section-scroll {
+  height: calc(100vh - 11rem);
+  font-size: 1.4rem;
+  grid-column: -3/-2;
+  overflow-y: scroll;
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-.main-content{
-    height: calc(100vh - 11rem);
-    grid-column: -2/-1;
-    overflow: hidden;
-    overflow-y: scroll;
+.scroll-list {
+  list-style: none;
 }
 
-.main-content-box{
-   padding-left: 4.2rem;
-    padding: 1.8rem;
-    padding-top: 0;
+.scroll-list a:link,
+.scroll-list a:visited {
+  display: block;
+
+  text-decoration: none;
+  color: #202020;
+  padding: 1.6rem 3.8rem;
 }
 
-.main-content-btn{
-    display: inline-block;
-    margin: 1.8rem;
-    margin-top: 0;
-
+.scroll-list a:hover,
+.scroll-list a:active {
+  display: block;
+  background-color: #768e84;
+  color: #fff;
+  /* padding: 0.8rem 1.6rem; */
 }
 
-.scroll-list{
- list-style: none;
- font-weight: 400;
- padding: 1.8rem;
- padding-top: 2.8rem;
- padding-left: 4.2rem;
-}
-.content-color-1{
+/* 
+***************************************************************************
+section 2
+*************************************************************************** */
 
+.main-content {
+  height: calc(100vh - 11rem);
+  grid-column: -2/-1;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
-.content-color-2{
-background-color: #adadad;
+.main-content-box {
+  display: inline-block;
+  padding: 1.8rem;
+  padding-top: 0;
+}
+
+.main-content-btn {
+  display: inline-block;
+  margin: 2rem;
+  margin-top: 0;
+  padding: 0.8rem 1.6rem;
+  text-decoration: none;
+}
+
+.content-color-1 {
+}
+
+.content-color-2 {
+  background-color: #adadad;
 }
 
 /* 
@@ -92,12 +114,104 @@ background-color: #adadad;
 Alone classes
 *************************************************************************** */
 
-.button-option-1{
-    background-color: red;
-    color: #202020;
-    font-size: 1.6rem;
-    font-weight: 300;
-    text-decoration: none;
-    padding: 0.8rem 1.6rem;
-    border-radius: 5px;
+.button-option-1 {
+  background-color: #f59f00;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.1;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.button-option-2 {
+  background-color: #3959eb;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border-radius: 5px;
+ 
+}
+
+.btn-option-svg {
+  
+  width: 1rem;
+  height: 1rem;
+  margin: auto;
+}
+
+.button-option-3 {
+  width: 17rem;
+  background-color: #202020;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.button-option-4 {
+  background-color: #7048e8;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  border-radius: 15px 0 15px 0;
+ 
+}
+
+.button-option-5 {
+  padding: 1.2rem 1.4rem;
+  background-color: #ffa8a8;
+  color: #202020;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.button-option-6 {
+ 
+  background-color: #f03e3e;
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-radius: 50px;
+  box-shadow: 0 0 30px 10px rgba(248, 91, 91, 0.397);
+}
+
+
+.button-option-7 {
+ 
+  background: linear-gradient(0.25turn, #24e4aa, #2892ad);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+
+.button-option-8 {
+  padding: 0.8rem 1rem;
+  color: #202020;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  border: 3px solid #202020;
+}
+
+.button-option-9 {
+  background-color: #099268;
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 9px;
+}
+
+.button-option-9 img{
+  width: 1.2rem;
+  height: 1.2rem;
+  
+}
+.button-option-9-txt{
+  display: inline-block;
+  padding-left: 0.5rem;
 }
