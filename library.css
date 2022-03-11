@@ -2,50 +2,77 @@
 ***************************************************************************
 Reusable classes
 *************************************************************************** */
+header {
+  height: 8.4rem;
+  background-color: #1b4332;
+}
 
 .grid {
   display: grid;
-  grid-template-columns: 250px 1fr;
+  grid-template-columns: 240px 1fr;
 }
 
 .heading-secondary-1 {
-  background-color: #1b4332;
+  display: flex;
+  justify-content: center;
   color: #fff;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   height: 4.8rem;
-  font-weight: 300;
-  padding: 1.8rem;
-  padding-left: 4.2rem;
-  padding-top: 0;
-}
-
-.element-1,
-.element-2 {
-  padding-left: 3rem;
+  font-weight: 200;
+  padding: 0.8rem;
+  /* padding-left: 2.3rem; */
+  padding-top: 4.6rem;
 }
 
 .element-1 {
-  background-color: #d1d9d6;
+  padding: 2.6rem;
+  padding-bottom: 0;
+  background-color: #fff;
+}
+
+/* .element-1 {
+  background-color: #b7e4c7;
 }
 
 .element-2 {
-  background-color: #a4b4ad;
-}
+  background-color: #95d5b2;
+} */
 
 .heading-tertiary {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
   color: #202020;
-  padding: 2rem 1.8rem 1rem 0;
+  padding: 1rem 1.8rem 1rem 0;
+  letter-spacing: 0.02rem;
 
   /* padding-left: 4.2rem; */
 }
 
+.heading-tertiary-para {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0 2rem 0 0;
+  letter-spacing: 0.02rem;
+}
+
 hr {
   height: 1px;
-  width: 95%;
-  background-color: #202020;
+  width: 100%;
+  background-color: #1b4332;
   border: none;
+  margin: 2rem 0;
+}
+
+.grid-section {
+  height: calc(100vh - 8.4rem);
+}
+
+.section-border {
+  border: 2px solid #1b4332;
+
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  background-color: #b7e4c7be;
 }
 
 /* 
@@ -54,13 +81,29 @@ scroll
 *************************************************************************** */
 
 .section-scroll {
-  height: calc(100vh - 11rem);
+  /* height: calc(100vh - 8.4rem); */
   font-size: 1rem;
   font-weight: 500;
   /* grid-column: -3/-2; */
   grid-column: 1/2;
   overflow-y: scroll;
   border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* ::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+  background: transparent;
+} */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #1b4332;
+}
+::-webkit-scrollbar-track {
+  background: #bde6ccff; 
 }
 
 .scroll-list {
@@ -79,9 +122,22 @@ scroll
 .scroll-list a:hover,
 .scroll-list a:active {
   display: block;
-  background-color: #768e84;
-  color: #fff;
+  background-color: #bde6ccff;
+  /* color: #fff; */
   /* padding: 0.8rem 1.6rem; */
+}
+
+.scroll-list-head{
+ 
+  font-size: 1.4rem;
+  font-weight: 700;
+  /* background-color: rgb(171, 209, 185); */
+  display: block;
+  text-decoration: none;
+  color: #1b4332;
+  padding: 1rem 2.3rem;
+  border-top: 0.2px solid #e2e2e2;
+  border-bottom: 0.2px solid #e2e2e2;
 }
 
 /* 
@@ -90,7 +146,7 @@ section 2
 *************************************************************************** */
 
 .main-content {
-  height: calc(100vh - 11rem);
+  /* height: calc(100vh - 8.4rem); */
   grid-column: 2/-1;
   overflow: hidden;
   overflow-y: scroll;
@@ -106,6 +162,7 @@ section 2
   display: inline-block;
   margin: 2rem;
   margin-top: 0;
+  margin-right: 0;
   padding: 0.8rem 1.6rem;
   text-decoration: none;
 }
@@ -340,7 +397,7 @@ usable triple btn
 
 .main-content-triple-option3 {
   width: fit-content;
-  margin: 0 2rem 4rem 2rem;
+  margin: 0 2rem 2rem 2rem;
   margin-top: 0;
 }
 
@@ -413,18 +470,16 @@ TEXT
 .main-content-box2 {
   padding: 2rem;
   padding-top: 0;
-  
 }
 
 .text-box-1 {
   background-color: #fff;
-  width: 50rem;
+  width: 80%;
   height: fit-content;
   padding: 2rem;
   text-align: center;
   margin: 2rem 0;
   margin-top: 0;
-  
 }
 .text-subheading1 {
   color: #099268;
@@ -448,7 +503,7 @@ TEXT
 .text-box-2 {
   font-family: "Poppins", sans-serif;
   background-color: #fff;
-  width: 50rem;
+  width: 80%;
   height: fit-content;
   padding: 2rem;
   text-align: center;
@@ -474,7 +529,7 @@ TEXT
 .text-box-3 {
   font-family: "Poppins", sans-serif;
   background-color: #fff;
-  width: 50rem;
+  width: 80%;
   height: fit-content;
   padding: 2rem;
   text-align: left;
@@ -505,7 +560,7 @@ TEXT
 .text-box-4 {
   font-family: "Poppins", sans-serif;
   background-color: rgb(33, 110, 172);
-  width: 50rem;
+  width: 80%;
   height: fit-content;
   padding: 2rem;
   text-align: left;
@@ -542,7 +597,7 @@ TEXT
 
 .text-box-5 {
   background-color: rgb(46, 46, 46);
-  width: 50rem;
+  width: 80%;
   height: fit-content;
   padding: 2rem 7rem;
   text-align: center;
@@ -573,7 +628,7 @@ TEXT
 .text-box-6 {
   font-family: "Poppins", sans-serif;
   background-color: #fff;
-  width: 50rem;
+  width: 80%;
   height: fit-content;
   padding: 2rem 20rem 2rem 2rem;
   text-align: left;
@@ -613,12 +668,13 @@ TEXT
 .text-box-7 {
   font-family: "Poppins", sans-serif;
   background-color: #fff;
-  width: 50rem;
+  width: 80%;
   height: fit-content;
   padding: 2rem;
   text-align: left;
   margin: 2rem 0;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .text-head-para-7 {
@@ -664,7 +720,7 @@ INPUT ELEMENTS
 }
 
 .input-option-1 {
-  width: 70rem;
+  width: 85.6%;
   height: 3rem;
   background-color: #1b1b1b;
   margin: 0 2rem 2rem 0;
@@ -704,20 +760,49 @@ INPUT ELEMENTS
 
 .input-bar1 {
   width: 40rem;
-  height: 3rem;
+  height: 2rem;
   background-color: #fff;
-  border-radius: 5px;
-  margin-bottom: 0.2rem;
-  /* margin: 0.001rem 0.001rem 0.001rem 2rem; */
-  /* display: flex; */
+  border-radius: 4px;
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
 }
 .input-bar-scroll1 {
+  width: 2.4rem;
+  height: 2rem;
+  background-color: #e7e7e7;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
+
+.input-bar-scroll1 span {
+  color: #202020;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.5rem 0.3rem;
+}
+
 .input-bar-scroll-svg1 {
+  stroke: #000000;
+  width: 0.8rem;
+  height: 0.8rem;
 }
 
 .input-bar-search1 {
+  width: 2.2rem;
+  height: 2rem;
+  background-color: #f79840;
+  display: flex;
+  align-items: center;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 .input-bar-search-svg1 {
+  stroke: #000000;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 0.5rem;
 }
