@@ -3,7 +3,7 @@
 Reusable classes
 *************************************************************************** */
 header {
-  height: 8.4rem;
+  /* height: 6.2rem; */
   background-color: #1b4332;
 }
 
@@ -12,17 +12,47 @@ header {
   grid-template-columns: 240px 1fr;
 }
 
-.heading-secondary-1 {
-  display: flex;
-  justify-content: center;
-  color: #fff;
-  font-size: 1.8rem;
-  height: 4.8rem;
-  font-weight: 200;
-  padding: 0.8rem;
-  /* padding-left: 2.3rem; */
-  padding-top: 4.6rem;
+.breadcrumb {
+  height: 6rem;
 }
+
+.breadcrumb ul {
+  display: flex;
+  list-style: none;
+  font-size: 0.9rem;
+  height: 4.8rem;
+  font-weight: 600;
+  padding: 0.8rem;
+  padding-left: 2.3rem;
+  padding-top: 4rem;
+}
+.breadcrumb-edit-svg {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: 0.6rem;
+  stroke: #fff;
+}
+
+.breadcrumb-edit {
+  text-decoration: none;
+  color: #fff;
+  padding-right: 0.6rem;
+}
+.breadcrumb-edit:hover {
+  color: #b7e4c7be;
+}
+
+/* .breadcrumb li::before {
+  content: "→";
+}
+
+.breadcrumb li:first-child::before {
+  content: "";
+}
+
+.breadcrumb li:not(:first-child)::before {
+  content: "→";
+} */
 
 .element-1 {
   padding: 2.6rem;
@@ -64,7 +94,7 @@ hr {
 }
 
 .grid-section {
-  height: calc(100vh - 8.4rem);
+  height: calc(100vh - 6rem);
 }
 
 .section-border {
@@ -81,7 +111,7 @@ scroll
 *************************************************************************** */
 
 .section-scroll {
-  /* height: calc(100vh - 8.4rem); */
+  height: calc(100vh - 6.2rem);
   font-size: 1rem;
   font-weight: 500;
   /* grid-column: -3/-2; */
@@ -145,7 +175,7 @@ section 2
 *************************************************************************** */
 
 .main-content {
-  /* height: calc(100vh - 8.4rem); */
+  height: calc(100vh - 6.2rem);
   grid-column: 2/-1;
   overflow: hidden;
   overflow-y: scroll;
@@ -808,7 +838,7 @@ INPUT ELEMENTS
   height: 1rem;
   margin: 0 0.5rem;
 }
-.search-bar-input-1{
+.search-bar-input-1 {
   width: 25rem;
   border: 0;
   outline: 0;
@@ -824,14 +854,14 @@ INPUT ELEMENTS
   display: flex;
 }
 
-.input-txt2{
+.input-txt2 {
   font-size: 0.7rem;
   font-weight: 700;
   padding: 1.15rem;
   cursor: pointer;
 }
 
-.input-search-bar-2{
+.input-search-bar-2 {
   width: 80%;
   margin: 0.3rem;
   border-radius: 50px;
@@ -839,7 +869,6 @@ INPUT ELEMENTS
   align-items: center;
   border: 1px solid #353535;
   background-color: #f7f7f7;
-
 }
 
 .input-bar-search-svg2 {
@@ -849,7 +878,7 @@ INPUT ELEMENTS
   margin-left: 1rem;
 }
 
-.search-bar-input-2{
+.search-bar-input-2 {
   width: 95%;
   font-size: 0.8rem;
   border: 0;
@@ -857,8 +886,6 @@ INPUT ELEMENTS
   margin: 0 0.4rem;
   background-color: #f7f7f7;
 }
-
-
 
 .input-option-3 {
   width: 70%;
@@ -869,7 +896,7 @@ INPUT ELEMENTS
   display: flex;
 }
 
-.input-search-bar-3{
+.input-search-bar-3 {
   width: 100%;
   margin: 0.8rem;
   border-radius: 8px;
@@ -878,14 +905,13 @@ INPUT ELEMENTS
   align-items: center;
   background-color: #f7f7f7;
   box-shadow: 0 0 30px 2px rgba(192, 180, 221, 0.425);
-
 }
 
-.search-bar-input-3{
+.search-bar-input-3 {
   width: 75%;
   font-size: 0.9rem;
   font-weight: 600;
-  
+
   border: 0;
   outline: 0;
   margin: 0 0.4rem;
@@ -893,7 +919,7 @@ INPUT ELEMENTS
   padding: 0 0.5rem;
 }
 
-.search-bar-txt-3{
+.search-bar-txt-3 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -917,7 +943,7 @@ INPUT ELEMENTS
   display: flex;
 }
 
-.input-logo4{
+.input-logo4 {
   fill: #fff;
   padding: 0 0 0 0.5rem;
   height: 3.5rem;
@@ -926,7 +952,7 @@ INPUT ELEMENTS
   cursor: pointer;
 }
 
-.input-search-bar-4{
+.input-search-bar-4 {
   width: 100%;
   margin: 0.8rem;
   border-radius: 5px;
@@ -935,10 +961,9 @@ INPUT ELEMENTS
   align-items: center;
   background-color: #252525;
   border: 1px solid #686868;
-
 }
 
-.search-bar-input-4{
+.search-bar-input-4 {
   width: 75%;
   font-size: 0.9rem;
   font-weight: 600;
@@ -949,7 +974,7 @@ INPUT ELEMENTS
   padding: 0 0.2rem;
 }
 
-.search-bar-txt-4{
+.search-bar-txt-4 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -966,9 +991,6 @@ INPUT ELEMENTS
   cursor: pointer;
 }
 
-
-
-
 .input-option-5 {
   width: 70%;
   height: 5rem;
@@ -978,7 +1000,7 @@ INPUT ELEMENTS
   display: flex;
 }
 
-.input-search-bar-5{
+.input-search-bar-5 {
   width: 100%;
   margin: 0.8rem;
   border-radius: 50px;
@@ -987,10 +1009,9 @@ INPUT ELEMENTS
   align-items: center;
   background-color: #f7f7f7;
   box-shadow: 0 0 30px 1px rgba(150, 149, 146, 0.281);
-
 }
 
-.search-bar-input-5{
+.search-bar-input-5 {
   width: 75%;
   font-size: 0.75rem;
   font-weight: 600;
@@ -999,10 +1020,9 @@ INPUT ELEMENTS
   margin: 0 0.4rem;
   background-color: #f7f7f7;
   padding: 0 1.2rem;
-  
 }
 
-.search-bar-txt-5{
+.search-bar-txt-5 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1017,3 +1037,73 @@ INPUT ELEMENTS
   cursor: pointer;
 }
 
+.input-option-6 {
+  width: 50%;
+  height: fit-content;
+  background-color: #fff;
+  margin: 0 2rem 2rem 0;
+  font-size: 0.7rem;
+  color: #202020;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.input-option-head6,
+.input-option-body6 {
+  border: 1px solid #202020;
+}
+
+.input-option-head6{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem;
+  padding-left: 0.8rem;
+}
+
+.input-option-body6 {
+  border-top: none;
+}
+
+.input-option-txt6{
+  list-style: none;
+  padding: 0.3rem;
+  /* padding-bottom: 0; */
+  padding-left: 0.8rem;
+}
+
+.input-svg6 {
+  width: 15px;
+  height: 16px;
+  stroke: #202020;
+}
+
+.input-active6 {
+  background-color: #202020;
+  color: #fff;
+}
+
+.input-option-7 {
+  width: 50%;
+  height: fit-content;
+  background-color: #fff;
+  margin: 0 2rem 2rem 0;
+  font-size: 0.7rem;
+  color: #202020;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.input-option-head7{
+  
+}
+.input-option-body7{
+  
+}
+.input-body-box7{
+  
+}
+.input-body-txt7{
+  
+}
