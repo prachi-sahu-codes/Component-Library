@@ -1096,14 +1096,75 @@ INPUT ELEMENTS
 }
 
 .input-option-head7{
-  
+  padding: 0.2rem;
+  padding-left: 0;
 }
 .input-option-body7{
-  
+  display: flex;
+  list-style: none;
 }
+.input-option-body7 > li {
+  border: 1px solid black;
+  padding: 0.3rem 0.6rem;
+  font-weight: 800;
+}
+
+.input-body-num7 {
+  width: 50px;
+  text-align: center;
+}
+
+.input-option-body7 .input-body-num7{
+  border-left: none;
+  border-right: none;
+}
+
 .input-body-box7{
+  display: flex;
   
 }
 .input-body-txt7{
+  padding: 0.3rem;
+}
+
+.input-option-8 {
+  width: 50%;
+  height: fit-content;
+  background-color: #fff;
+  margin: 0 2rem 2rem 0;
+  font-size: 0.7rem;
+  color: #202020;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.input-option-body8{
+  display: flex;
+  list-style: none;
+  padding: 1rem 0;
+}
+.input-option-body8 > li {
+  border: 1px solid black;
+  padding: 0.32rem 0.6rem;
+  font-weight: 600;
+  border-radius: 50px;
+}
+
+.input-body-num8 {
+  width: 40px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.input-option-body8 .input-body-num8{
+  border: none;
+}
+
+.input-body-box8{
+  display: flex;
   
+}
+.input-body-txt8{
+  padding: 1.4rem 1rem;
+  font-size: 0.8rem;
 }
